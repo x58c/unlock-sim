@@ -6,34 +6,59 @@
     <title>unlock-sim</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             text-align: center;
-            margin-top: 50px;
-            background-color: #000; /* خلفية سوداء */
-            color: #fff; /* نص أبيض لتباين أفضل */
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, #282c34, #000);
+            color: #f1f1f1;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #61dafb; /* لون أزرق فاتح للعنوان */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* تأثير الظل للعنوان */
         }
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 30px;
             margin: 10px;
-            font-size: 16px;
+            font-size: 18px;
             color: #fff;
-            background-color: #007bff; /* لون الخلفية للأزرار */
-            border: none;
-            border-radius: 5px;
+            background-color: #61dafb; /* لون أزرق فاتح للأزرار */
+            border: 2px solid #61dafb; /* إطار مطابق للون الخلفية */
+            border-radius: 30px; /* زوايا دائرية للأزرار */
             text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            letter-spacing: 1px; /* زيادة تباعد الأحرف */
+            background-clip: padding-box; /* يمنع تداخل الخلفية مع الإطار */
         }
         .button:hover {
-            background-color: #0056b3; /* لون الخلفية عند المرور على الأزرار */
+            background-color: #4fa3d6; /* لون خلفية الأزرار عند التمرير */
+            border-color: #4fa3d6; /* تغيير لون الإطار عند التمرير */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
-        h1 {
-            color: #fff; /* لون العنوان أبيض */
+        .button:active {
+            background-color: #357ab7; /* لون خلفية الأزرار عند النقر */
+            border-color: #357ab7; /* تغيير لون الإطار عند النقر */
+            transform: translateY(2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <h1>تدلل واختر نوع شريحتك</h1>
-    <a href="https://x58c.github.io/unlock-sim/stc.html" class="button">STC</a>
-    <a href="https://x58c.github.io/unlock-sim/mobily.html" class="button">Mobily</a>
+    <div>
+        <h1>تدلل واختر نوع شريحتك</h1>
+        <a href="https://x58c.github.io/unlock-sim/stc.html" class="button">STC</a>
+        <a href="https://x58c.github.io/unlock-sim/mobily.html" class="button">Mobily</a>
+    </div>
 </body>
 </html>
