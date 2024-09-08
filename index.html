@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>unlock-sim</title>
+    <!-- إضافة رابط الخط Amiri Quran من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran:wght@400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Amiri Quran', serif; /* تطبيق خط Amiri Quran */
             text-align: center;
             margin: 0;
             padding: 0;
             background: radial-gradient(circle, #282c34, #000);
-            color: #f1f1f1;
+            color: #b0bec5; /* لون رمادي أزرق فاتح للنصوص */
             height: 100vh;
             display: flex;
             align-items: center;
@@ -20,8 +22,8 @@
         h1 {
             font-size: 2.5em;
             margin-bottom: 30px;
-            color: #61dafb; /* لون أزرق فاتح للعنوان */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* تأثير الظل للعنوان */
+            color: #80deea; /* لون أزرق فاتح هادئ للعنوان */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* تأثير ظل خفيف للعنوان */
         }
         .button {
             display: inline-block;
@@ -29,8 +31,8 @@
             margin: 10px;
             font-size: 18px;
             color: #fff;
-            background-color: #61dafb; /* لون أزرق فاتح للأزرار */
-            border: 2px solid #61dafb; /* إطار مطابق للون الخلفية */
+            background-color: #003366; /* لون أزرق غامق للأزرار */
+            border: 2px solid #003366; /* إطار مطابق للون الخلفية */
             border-radius: 30px; /* زوايا دائرية للأزرار */
             text-decoration: none;
             text-transform: uppercase;
@@ -41,14 +43,14 @@
             background-clip: padding-box; /* يمنع تداخل الخلفية مع الإطار */
         }
         .button:hover {
-            background-color: #4fa3d6; /* لون خلفية الأزرار عند التمرير */
-            border-color: #4fa3d6; /* تغيير لون الإطار عند التمرير */
+            background-color: #002244; /* لون خلفية الأزرار عند التمرير */
+            border-color: #002244; /* تغيير لون الإطار عند التمرير */
             transform: translateY(-5px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
         }
         .button:active {
-            background-color: #357ab7; /* لون خلفية الأزرار عند النقر */
-            border-color: #357ab7; /* تغيير لون الإطار عند النقر */
+            background-color: #001122; /* لون خلفية الأزرار عند النقر */
+            border-color: #001122; /* تغيير لون الإطار عند النقر */
             transform: translateY(2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
@@ -59,7 +61,7 @@
         <h1>تدلل واختر نوع شريحتك</h1>
         <a href="https://x58c.github.io/unlock-sim/stc.html" class="button">STC</a>
         <a href="https://x58c.github.io/unlock-sim/mobily.html" class="button">Mobily</a>
-        <a href="https://x58c.github.io/unlock-sim/zain.html" class="button">zain</a>
+        <a href="https://x58c.github.io/unlock-sim/zain.html" class="button">Zain</a>
     </div>
 </body>
 </html>
